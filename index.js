@@ -17,7 +17,8 @@ function getWeather(location) {
        document.getElementById("wind-speed").innerHTML = data.wind.speed;
        document.getElementById("weather-description").innerHTML = data.weather[0].description;
        document.getElementById("latitude").innerHTML = data.coord.lat;
-       document.getElementById("longitude").innerHTML = data.coord.lon; 
+       document.getElementById("longitude").innerHTML = data.coord.lon;
+       document.getElementById("Country").innerHTML = data.sys.country;
     })
     .catch((error) => {
       console.error("error fectching data: ", error);
